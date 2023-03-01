@@ -1,0 +1,334 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+}
+
+.signin {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.8) 0,
+      transparent 60%,
+      rgba(0, 0, 0, 0.8)
+    ),
+    url("./Image/netflix.jpg");
+  width: 100%;
+  height: 46rem;
+}
+
+button {
+  background-color: #e50914;
+  color: #fff;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-radius: 0.2rem;
+}
+
+.nav-bar {
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.language {
+  font-size: 1rem;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  color: #fff;
+  border: 1px solid #aaa;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.logo img {
+  width: 25%;
+  margin: 0rem 10rem 4rem 1rem;
+}
+
+.action {
+  width: 100%;
+  /* background: #000; */
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.action li {
+  padding: 1rem;
+  width: 100%;
+}
+
+.center-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 30%; */
+}
+
+.content {
+  color: white;
+  width: 47%;
+  margin-top: 7rem;
+}
+
+.email {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.written-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.written-content p {
+  margin-bottom: 2rem;
+}
+
+.watching-devices,
+.download-shows,
+.watch-shows,
+.profile,
+.faq,
+.contact {
+  background-color: #000;
+  color: white;
+  /* margin-top: 0rem; */
+  border-top: 0.5rem solid #333;
+}
+
+.watching-devices-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.watching-devices-content {
+  width: 30%;
+  padding: 8rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 5rem;
+}
+.watching-device-animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.animated-video {
+  margin: 1.2rem 3rem 2rem -34.5rem;
+}
+
+.animated-video video {
+  width: 96%;
+}
+
+.download-shows-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.download-shows-animation {
+  padding-right: 15rem;
+  /* background: #fff; */
+}
+
+.download-shows-content {
+  width: 40%;
+}
+
+.downloading {
+  background-color: #000;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  margin: -8rem 0rem 0rem 10rem;
+  border: 2px solid hsla(0, 0%, 100%, 0.25);
+  border-radius: 1rem;
+}
+
+.downloading-content {
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.watch-shows-content {
+  width: 35%;
+  padding-left: 12rem;
+  /* background: #fff; */
+}
+
+.watch-shows-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.watch-shows-animation {
+  display: flex;
+  /* margin-right: -25rem; */
+  padding-left: 10rem;
+}
+
+.watching {
+  margin: 4rem 5rem 2rem -32.5rem;
+}
+
+.watching video {
+  width: 80%;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.profile-content {
+  width: 40%;
+  padding-left: 10rem;
+}
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
+}
+
+.questions {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin: 2rem;
+}
+
+.questions button {
+  height: 5rem;
+  width: 50rem;
+  margin: 0.3rem;
+  padding-left: 1rem;
+  text-align: start;
+  font-size: 1.5rem;
+  background-color: #333;
+  color: white;
+}
+
+.faq-email {
+  justify-content: center;
+  width: 45rem;
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+}
+
+.contact {
+  color: #737373;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 6rem 0 0 20rem;
+  font-size: smaller;
+}
+
+.contact li a {
+  text-decoration: none;
+  color: #737373;
+}
+
+.contact ul {
+  columns: 4;
+}
+
+.contact ul li {
+  /* margin-top: 1rem; */
+  padding: 0rem 5rem 1rem 0rem;
+}
+
+#footer-language {
+  font-size: 1rem;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  background: #000;
+  color: #737373;
+  margin-bottom: 1rem;
+}
+
+.accordion {
+  display: flex;
+  max-width: 50rem;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  overflow-y: hidden;
+  /* align-items: center; */
+}
+
+.accordion .contentBx {
+  position: relative;
+  margin: 1rem 0 -7rem 0;
+  /* margin-bottom: -6rem; */
+
+  font-size: 2rem;
+}
+
+.accordion .contentBx .label {
+  position: relative;
+  padding: 10px;
+  background: #333;
+  color: white;
+  cursor: pointer;
+}
+
+.accordion .contentBx .label::before {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+}
+
+.accordion .contentBx.active .label::before {
+  content: "x";
+}
+
+.accordion .contentBx .content {
+  position: relative;
+  width: fit-content;
+  margin: 0.2rem 0rem 8rem 0rem;
+  /* padding: 10px; */
+  /* margin: 0rem; */
+  background: #333;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
+}
+
+.accordion .contentBx.active .content {
+  height: fit-content;
+  padding: 10px;
+}
+
+.accordion .contentBx .content p {
+  margin: 1rem;
+  font-size: x-large;
+}
