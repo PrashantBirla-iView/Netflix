@@ -1,0 +1,513 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+}
+
+body {
+  background: #000;
+}
+
+.container .head {
+  position: absolute;
+  top: -3rem;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  z-index: 100000;
+  overflow: hidden;
+}
+
+.banner,
+.part1,
+.part2,
+.part3,
+.part4,
+.faq {
+  border-bottom: 0.5rem solid #333;
+}
+
+.container .head img {
+  width: 13%;
+  top: 2rem;
+  left: 2rem;
+  position: relative;
+}
+
+.container .head .action-buttons {
+  /* padding: 65px; */
+  position: relative;
+  top: 2rem;
+  right: 2rem;
+}
+
+.container .head .action-buttons button {
+  color: #fff;
+  border: none;
+  background-color: #e50914;
+  border-radius: 5px;
+  padding: 8px 18px;
+}
+
+.lang {
+  padding: 8px 18px;
+  color: #fff;
+  border: 1px solid #aaa;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  z-index: 1;
+  background: linear-gradient(to bottom, #000, transparent);
+}
+
+/* Banner */
+
+.banner::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  z-index: 1;
+  background: linear-gradient(to top, #000, transparent);
+}
+
+.banner .fit {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.banner .box {
+  place-items: center;
+  z-index: 1000000;
+  color: #fff;
+  width: 100%;
+}
+
+.banner .box .heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.banner .box .heading h2 {
+  font-size: 50px;
+  letter-spacing: 2px;
+  width: 50%;
+}
+
+.banner .box .heading h5 {
+  font-size: 28px;
+  font-weight: 400;
+  padding: 16px 0;
+}
+
+.banner .box .heading p {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 15px 0;
+  padding-bottom: 20px;
+}
+
+.banner .box .search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.banner .box .search input {
+  font-size: 16px;
+  border: 1px solid #8c8c8c;
+  outline: none;
+  color: black;
+  border-radius: 2px;
+  padding: 10px;
+  width: 500px;
+  height: 15px;
+  align-items: center;
+}
+
+.banner .box .search button {
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 0.1px;
+  border: none;
+  border-radius: 2px;
+  background: #e50914;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+  font-size: 20px;
+  line-height: 17px;
+  width: 140px;
+  padding: 10px;
+}
+
+.part1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 32px 64px;
+  /* margin: 32px; */
+}
+
+.part1 .talk {
+  width: 35%;
+}
+
+.part1 .talk h1 {
+  font-size: 50px;
+  letter-spacing: 2px;
+  padding-bottom: 10px;
+  color: #fff;
+}
+
+.part1 .talk p {
+  font-size: 25px;
+  color: #fff;
+}
+
+.part1 .img {
+  width: 40%;
+  display: grid;
+  place-items: center;
+}
+
+.part1 .img img {
+  width: 100%;
+  z-index: 2;
+}
+
+.part1 .img .animated-video {
+  margin-top: -450px;
+}
+
+.part2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 32px 64px;
+  /* margin: 32px; */
+}
+
+.part2 .talk {
+  width: 45%;
+}
+
+.part2 .talk h1 {
+  font-size: 50px;
+  letter-spacing: 2px;
+  padding-bottom: 10px;
+  color: #fff;
+}
+
+.part2 .talk p {
+  font-size: 25px;
+  color: #fff;
+}
+
+.part2 .img {
+  width: 40%;
+  margin-left: -7rem;
+  display: grid;
+  place-items: center;
+}
+
+.part2 .img img {
+  width: 100%;
+  z-index: 2;
+}
+
+.downloading {
+  background-color: #000;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  margin-top: -5rem;
+  /* margin: -8rem 0rem 0rem 10rem; */
+  border: 2px solid hsla(0, 0%, 100%, 0.25);
+  border-radius: 1rem;
+  z-index: 10000;
+}
+
+.downloading-content {
+  padding: 1rem;
+  color: #fff;
+}
+
+.part3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 32px 64px;
+  /* margin: 32px; */
+}
+
+.part3 .talk {
+  width: 35%;
+}
+
+.part3 .talk h1 {
+  font-size: 50px;
+  letter-spacing: 2px;
+  padding-bottom: 10px;
+  color: #fff;
+}
+
+.part3 .talk p {
+  font-size: 25px;
+  color: #fff;
+}
+
+.part3 .img {
+  width: 40%;
+  display: grid;
+  place-items: center;
+}
+
+.part3 .img img {
+  width: 100%;
+  z-index: 2;
+}
+
+.part3 .img .animated-video {
+  margin-top: -500px;
+  width: 65%;
+  height: auto;
+}
+
+.part4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 32px 64px;
+  /* margin: 32px; */
+}
+
+.part4 .talk {
+  width: 45%;
+}
+
+.part4 .talk h1 {
+  font-size: 50px;
+  letter-spacing: 2px;
+  padding-bottom: 10px;
+  color: #fff;
+}
+
+.part4 .talk p {
+  font-size: 25px;
+  width: 80%;
+  color: #fff;
+}
+
+.part4 .img {
+  width: 40%;
+  display: grid;
+  place-items: center;
+}
+
+.part4 .img img {
+  width: 100%;
+  z-index: 2;
+}
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
+}
+
+.questions {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin: 2rem;
+}
+
+.questions button {
+  height: 5rem;
+  width: 50rem;
+  margin: 0.3rem;
+  padding-left: 1rem;
+  text-align: start;
+  font-size: 1.5rem;
+  background-color: #333;
+  color: white;
+}
+
+.faq-email {
+  justify-content: center;
+  width: 45rem;
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+}
+
+.contact {
+  color: #737373;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 6rem 0 0 20rem;
+  font-size: smaller;
+}
+
+.contact li a {
+  text-decoration: none;
+  color: #737373;
+}
+
+.contact ul {
+  columns: 4;
+}
+
+.contact ul li {
+  /* margin-top: 1rem; */
+  padding: 0rem 5rem 1rem 0rem;
+}
+
+.faq h1 {
+  font-size: 3.3rem;
+  color: #fff;
+}
+
+.faq p {
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 500;
+  padding: 15px 0;
+  padding-bottom: 20px;
+}
+
+.faq .search input {
+  font-size: 16px;
+  border: 1px solid #8c8c8c;
+  outline: none;
+  color: black;
+  border-radius: 2px;
+  padding: 10px;
+  min-width: 500px;
+  line-height: 15px;
+  align-items: center;
+}
+
+.faq .search button {
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 0.1px;
+  border: none;
+  border-radius: 2px;
+  background: #e50914;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+  font-size: 15px;
+  line-height: 25px;
+  min-width: 150px;
+  padding: 10px;
+  margin-left: -4px;
+}
+
+#footer-language {
+  font-size: 1rem;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  background: #000;
+  color: #737373;
+  margin-bottom: 1rem;
+}
+
+.accordion {
+  display: flex;
+  max-width: 50rem;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  overflow-y: hidden;
+  /* align-items: center; */
+}
+
+.accordion .contentBx {
+  position: relative;
+  margin: 1rem 0 -7rem 0;
+  /* margin-bottom: -6rem; */
+
+  font-size: 2rem;
+}
+
+.accordion .contentBx .label {
+  position: relative;
+  padding: 10px;
+  background: #333;
+  color: white;
+  cursor: pointer;
+}
+
+.accordion .contentBx .label::before {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+}
+
+.accordion .contentBx.active .label::before {
+  content: "x";
+}
+
+.accordion .contentBx .content {
+  position: relative;
+  width: fit-content;
+  margin: 0.2rem 0rem 8rem 0rem;
+  /* padding: 10px; */
+  /* margin: 0rem; */
+  background: #333;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
+  color: #fff;
+}
+
+.accordion .contentBx.active .content {
+  height: fit-content;
+  padding: 10px;
+}
+
+.accordion .contentBx .content p {
+  margin: 1rem;
+  font-size: x-large;
+}
